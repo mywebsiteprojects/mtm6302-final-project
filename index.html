@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Clock !</title>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <i class="fa fa-cog" aria-hidden="true"></i>
+    </button>
+    <div id="time" class="text-center">
+      <div class="content">
+      <p id="greet">Good morning, It is currently</p>
+      <h1> <b id="showtime"></b><b id="showsecond"></b><small id="showprep"> AM</small></h1>
+      <h5 id="showdate">December 04, 2020</h5>
+    </div>
+    </div>
+    <div id="moresection">
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+          aria-expanded="false" aria-controls="collapseExample">
+          More
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body bg-danger">
+          <div class="row">
+            <div class="col-lg-6 p-3">
+              Day of the week<br>
+              <h5 id="showday"></h5>
+            </div>
+            <div class="col-lg-6 p-3">
+              Day of the Month<br>
+              <h5 id="showdaymonth">Sunday</h5>
+            </div>
+            <div class="col-lg-6 p-3">
+              Day of the Year<br>
+              <h5 id="showdayyear">Sunday</h5>
+            </div>
+            <div class="col-lg-6 p-3">
+              Week of the Year<br>
+              <h5 id="showweekyear">Sunday</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Settings</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>
+              Show seconds
+            </h5>
+            <input type="radio" name="showseconds" value="Yes">Yes &nbsp;
+            <input type="radio" name="showseconds" value="No">No
+            <br>
+            <hr>
+
+            <h5>
+              Show date
+            </h5>
+            <input type="radio" name="showdates" value="Yes">Yes &nbsp;
+            <input type="radio" name="showdates" value="No">No
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="settings" data-bs-dismiss="modal">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+body{
+    color: white !important;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-size: cover;
+}
+.modal{
+    color: black !important;
+}
+#time{
+    height: 350px;
+}
+#collapse{
+    height: 200px;
+}
